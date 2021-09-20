@@ -751,7 +751,7 @@
             
 
             // How to get some random value from the contract
-            tpsToken.methods.baseExtension().call().then(console.log);
+            tpsToken.methods.totalSupply().call().then(i => console.log("Total Supply: " + i));
 
             var button = document.querySelector('button.transferFunds')
 
